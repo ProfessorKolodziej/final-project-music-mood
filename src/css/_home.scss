@@ -27,7 +27,7 @@ a {
 	font-size: 10px;
 	line-height: 12px;
 	color: #fff;
-	padding: 10px;
+	padding: 8.28px;
 	text-decoration: none;
 }
 
@@ -88,6 +88,7 @@ a {
 
 .x-button::before {
 	content: "\d7";
+	font-size: 26px;
 }
 
 .welcome {
@@ -131,4 +132,120 @@ a {
 	font-size: 9px;
 	top: 90px;
 	border-color: #4acdd6;
+}
+
+@media screen and (min-width: 768px) {
+	.topnav {
+		width: 682px;
+		height: 65px;
+		top: 51px;
+		left: 40px;
+	}
+
+	a {
+		font-family: Jura, sans-serif;
+		font-weight: bold;
+		font-size: 20px;
+		line-height: 23.66px;
+		padding: 32.31px;
+	}
+
+	.orange-border {
+		width: 445px;
+		height: 129px;
+		left: 163px;
+		top: 721px;
+	}
+
+	.take-our-survey {
+		font-size: 20px;
+		line-height: 24px;
+	}
+
+	.start-container {
+		position: absolute;
+		width: 446px;
+		height: 247px;
+		left: 162px;
+		top: 369px;
+		border-width: 5px;
+	}
+
+	.blue-banner {
+		position: relative;
+		width: 445px;
+		height: 55px;
+	}
+
+	.x-button {
+		width: 32px;
+		height: 32px;
+		left: 400px;
+		border-width: 3px;
+	}
+
+	.x-button::before {
+		content: "\d7";
+		font-size: 45px;
+	}
+
+	.welcome {
+		left: 17px;
+		top: 17px;
+		font-size: 14px;
+		line-height: 16.56px;
+	}
+
+	.feeling {
+		padding-right: 0;
+		padding-left: 0;
+		top: 74px;
+		font-size: 27px;
+		width: 445px;
+		font-weight: bold;
+	}
+
+	.button-journey {
+		width: 254px;
+		height: 46px;
+		font-size: 15px;
+		top: 160px;
+		border-width: 5px;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.topnav {
+		position: absolute;
+		width: 1036px;
+		height: 72px;
+		top: 57px;
+		left: 82px;
+	}
+
+	a {
+		font-size: 20px;
+		line-height: 24px;
+		padding: 49.08px;
+	}
+
+	.orange-border {
+		position: absolute;
+		width: 445px;
+		height: 129px;
+		left: 377px;
+		top: 722px;
+	}
+
+	.take-our-survey {
+		font-size: 20px;
+		line-height: 24px;
+	}
+
+	.start-container {
+		width: 445px;
+		height: 246px;
+		left: 377px;
+		top: 372px;
+	}
 }
