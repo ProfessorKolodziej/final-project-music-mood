@@ -1,0 +1,134 @@
+body {
+	background-image: url("../images/bg.png");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+}
+
+.topnav {
+	position: absolute;
+	width: 297px;
+	height: 31.45px;
+	top: 20px;
+	left: 12px;
+	background: rgba(153, 58, 157, 0.9);
+	box-sizing: border-box;
+	border-radius: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+a {
+	font-family: Jura, sans-serif;
+	font-weight: bold;
+	font-size: 10px;
+	line-height: 12px;
+	color: #fff;
+	padding: 10px;
+	text-decoration: none;
+}
+
+.orange-border {
+	position: absolute;
+	width: 263px;
+	height: 93px;
+	left: 33px;
+	top: 425px;
+	background: #ffa149;
+	border-radius: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.take-our-survey {
+	font-family: Jura, sans-serif;
+	font-weight: bold;
+	font-size: 15px;
+	line-height: 18px;
+	text-align: center;
+	color: #000;
+}
+
+.start-container {
+	position: absolute;
+	width: 229.55px;
+	height: 138.83px;
+	left: 48.73px;
+	top: 187.08px;
+	background: #c4c4c4;
+	box-shadow: 5px 4px 100px 40px rgba(0, 0, 0, 0.5);
+	border-style: outset;
+	border-color: #e5e5e5;
+}
+
+.blue-banner {
+	position: relative;
+	width: 229.55px;
+	height: 31.03px;
+	background: #4acdd6;
+	display: flex;
+	align-items: center;
+}
+
+.x-button {
+	border-style: outset;
+	position: absolute;
+	width: 18px;
+	height: 18px;
+	background: #c4c4c4;
+	left: 200px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.x-button::before {
+	content: "\d7";
+}
+
+.welcome {
+	position: absolute;
+	left: 20px;
+	top: 7px;
+	color: white;
+	font-family: Jura, sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 14px;
+}
+
+.feeling {
+	position: absolute;
+	padding-right: 30px;
+	padding-left: 30px;
+	text-align: center;
+	top: 25px;
+	font-family: Jura, sans-serif;
+	font-size: 15px;
+}
+
+.start-journey {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.button-journey {
+	position: absolute;
+	width: 131px;
+	height: 26px;
+	background: #4acdd6;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: black;
+	font-size: 9px;
+	top: 90px;
+	border-color: #4acdd6;
+}
