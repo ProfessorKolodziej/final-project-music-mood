@@ -51,26 +51,25 @@ body {
 }
 
 nav {
-	width: 297px;
-	height: 31px;
-	left: 12px;
-	top: 16px;
-	position: relative;
+	width: 400px;
+	height: 50px;
+	align-items: center;
+	margin-left: 50px;
+	margin-top: 15px;
 	background: rgba(153, 58, 157, 0.9);
 	border: 1px solid #000;
 	box-sizing: border-box;
 	border-radius: 40px;
 
 	@media screen and (min-width: $desktop) {
-	position: relative;
-	width: 1036px;
-	height: 72px;
-	
+		width: 1200px;
+		height: 72px;
+		margin-left: 200px;
 	}
-	@media screen and (min-width: $tablet-vertical){
-	position: absolute;
-	width: 720px;
-	height: 67px;
+
+	@media screen and (min-width: $tablet-vertical) {
+		width: 500px;
+		height: 67px;
 	}
 }
 
@@ -80,7 +79,7 @@ nav {
 	height: 34px;
 	left: 35px;
 	top: -2px;
-	font-family: Jura;
+	font-family: Jura, sans-serif;
 	font-style: bold;
 	font-weight: 700;
 	font-size: 10px;
@@ -89,40 +88,27 @@ nav {
 	color: #fff;
 	text-decoration: none;
 
-@media screen and (min-width: $desktop){
-	position: relative;
-	width: 114px;
-	height: 71px;
-	font-family: Jura, sans-serif;
-	font-style: bold;
-	font-weight: 700;
-	font-size: 25px;
-	line-height: 24px;
-	margin-top: 20px;
-	margin-left: 150px;
-	display: inline-block;
-	align-items: center;
-	text-align: center;
-	color: #fff;
-	text-decoration: none;
-}
-@media screen and (min-width: $tablet-vertical){
-	
-position: relative;
-width: 98px;
-height: 72px;
-left: 70px;
-top: 36px;
-font-family: Jura;
-font-style: normal;
-font-weight: bold;
-font-size: 18px;
-line-height: 21px;
-display: flex;
-align-items: center;
-text-align: center;
-color: #FFFFFF;
-}
+	@media screen and (min-width: $desktop) {
+		font-size: 30px;
+		left: 100px;
+	}
+
+	@media screen and (min-width: $tablet-vertical) {
+		position: relative;
+		width: 98px;
+		height: 72px;
+		left: 70px;
+		top: 36px;
+		font-family: Jura, sans-serif;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 18px;
+		line-height: 21px;
+		display: flex;
+		align-items: center;
+		text-align: center;
+		color: #fff;
+	}
 }
 
 .reftomood {
@@ -138,6 +124,11 @@ color: #FFFFFF;
 	text-align: center;
 	color: #fff;
 	text-decoration: none;
+
+	@media screen and (min-width: $desktop) {
+		font-size: 100px;
+		left: 100px;
+	}
 }
 
 .reftores {
@@ -171,47 +162,96 @@ color: #FFFFFF;
 
 .projectbox-aboutus {
 	position: relative;
-	width: 920px;
-	height: 433px;
-	left: 154px;
-	top: 158px;
+	width: 440px;
+	height: 320px;
+	left: 22px;
+	top: 101px;
 	background: #c4c4c4;
 	box-shadow: 5px 4px 100px 40px rgba(0, 0, 0, 0.5);
+	border-style: outset;
+	border-width: 7px;
+
+	@media screen and (min-width: $desktop) {
+		position: relative;
+		width: 920px;
+		height: 433px;
+		margin-left: 110px;
+		left: 154px;
+		top: 158px;
+		background: #c4c4c4;
+		box-shadow: 5px 4px 100px 40px rgba(0, 0, 0, 0.5);
+	}
 }
 
 .project-aboutus {
 	font-family: Jura, sans-serif;
 	font-weight: 700;
-	font-size: 30px;
-	line-height: 35px;
+	font-size: 22px;
+	line-height: 24px;
 	text-align: center;
 	color: #fff;
 	background: #4acdd6;
 	padding: 10px;
 	position: relative;
+
+	@media screen and (min-width: $desktop) {
+		font-size: 48px;
+		line-height: 41px;
+		font-weight: 700;
+	}
+
+	@media screen and (min-width: $tablet-vertical) {
+		font-size: 27px;
+		line-height: 41px;
+		font-weight: 700;
+	}
 }
 
 .projecttext-aboutus {
 	position: relative;
-	margin-left: 60px;
 	font-family: Jura, sans-serif;
-	font-weight: 400;
-	font-size: 24px;
-	line-height: 28px;
-	text-align: left;
-	color: #000;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 15px;
+	line-height: 17px;
+	margin-left: 20px;
+	margin-right: 15px;
+	display: flex;
+	align-items: center;
+
+	@media screen and (min-width: $desktop) {
+		position: relative;
+		margin-left: 60px;
+		font-family: Jura, sans-serif;
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 28px;
+		text-align: left;
+		color: #000;
+	}
 }
 
-.meet-teambox{
+.meet-teambox {
 	width: 222px;
 	height: 69px;
 	position: relative;
-	background: #993A9D;
+	background: rgba(153, 58, 157, 0.5);
+	mix-blend-mode: hard-light;
+	margin-top: 70px;
+	margin-left: 120px;
 	box-shadow: 10px 10px 10px 20px rgba(0, 0, 0, 0.4);
 	border-radius: 30px;
+
+	@media screen and (min-width: $desktop) {
+		width: 350px;
+		height: 120px;
+		margin-top: 100px;
+		margin-left: 290px;
+	}
 }
-.meetteamtext{
-	font-family: Jura;
+
+.meetteamtext {
+	font-family: Jura, sans-serif;
 	font-style: normal;
 	font-weight: bold;
 	position: relative;
@@ -222,82 +262,114 @@ color: #FFFFFF;
 	margin-top: 45px;
 	padding-top: 25px;
 	color: white;
+
+	@media screen and (min-width: $desktop) {
+		font-size: 32px;
+		padding-top: 50px;
+	}
 }
-.member-onebox{
+
+.member-onebox {
 	position: relative;
 	width: 230px;
-	height: 85px;
-	margin-left: 50px;
-	margin-top: 100px;
-	background: #40D6EB;
+	height: 90px;
+	margin-left: 205px;
+	margin-top: 60px;
+	background: rgba(6, 189, 214, 0.5);
 	mix-blend-mode: hard-light;
 	box-shadow: 10px 2px 5px 10px rgba(0, 0, 0, 0.5);
 	border-radius: 20px;
+
+	@media screen and (min-width: $desktop) {
+		width: 577px;
+		height: 120px;
+		margin-left: 350px;
 	}
-.memberonetext{
+}
+
+.memberonetext {
 	color: white;
 	font-family: Jura;
 	font-style: normal;
 	font-weight: bold;
 	font-size: 15px;
 	line-height: 20px;
+	padding-top: 8px;
+	padding-bottom: 5px;
 	display: flex;
 	align-items: center;
 	text-align: center;
+
+	@media screen and (min-width: $desktop) {
+		font-size: 20px;
+		line-height: 24px;
+		align-items: center;
+		text-align: center;
+		margin-left: 130px;
+		padding-top: 18px;
+	}
 }
-.member-twobox{
+
+.member-twobox {
+	position: relative;
 	width: 230px;
-	height: 85px;
-	background: #07A8BE;
+	height: 90px;
+	margin-left: 205px;
+	background: rgba(7, 168, 190, 0.2);
 	mix-blend-mode: hard-light;
 	box-shadow: 10px 5px 10px 10px rgba(0, 0, 0, 0.5);
 	border-radius: 20px;
+
+	@media screen and (min-width: $desktop) {
+		width: 577px;
+		height: 120px;
+		margin-left: 350px;
+	}
 }
-.membertwotext{
+
+.membertwotext {
 	color: white;
-	font-family: Jura;
+	font-family: Jura, sans-serif;
 	font-style: normal;
 	font-weight: bold;
 	font-size: 15px;
 	line-height: 20px;
+	padding-top: 8px;
+	padding-bottom: 5px;
 	display: flex;
 	align-items: center;
 	text-align: center;
+
+	@media screen and (min-width: $desktop) {
+		font-size: 20px;
+		line-height: 24px;
+		align-items: center;
+		text-align: center;
+		margin-left: 130px;
+		padding-top: 18px;
+	}
 }
-.member-threebox{
+
+.member-threebox {
 	width: 230px;
-	height: 85px;
-	background: #81389A;
+	position: relative;
+	height: 90px;
+	margin-left: 205px;
+	background: rgba(129, 56, 154, 0.5);
 	mix-blend-mode: hard-light;
 	box-shadow: 20px 15px 10px rgba(0, 0, 0, 0.5);
 	border-radius: 20px;
 
+	@media screen and (min-width: $desktop) {
+		width: 577px;
+		height: 120px;
+		margin-left: 350px;
+	}
 }
-.memberthreetext{
+
+.memberthreetext {
 	color: white;
-	font-family: Jura;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 15px;
-	line-height: 20px;
-	display: flex;
-	align-items: center;
-	text-align: center; 
-
-}
-
-
-.member-fourbox{
-	width: 230px;
-	height: 85px;
-	background: #7D1165;
-	mix-blend-mode: luminosity;
-	box-shadow: 20px 15px 10px rgba(0, 0, 0, 0.5);
-	border-radius: 20px;
-}
-.memberfourtext{
-	color: white;
-	font-family: Jura;
+	font-family: Jura, sans-serif;
 	font-style: normal;
 	font-weight: bold;
 	font-size: 15px;
@@ -305,4 +377,54 @@ color: #FFFFFF;
 	display: flex;
 	align-items: center;
 	text-align: center;
+	padding-top: 8px;
+	padding-bottom: 5px;
+
+	@media screen and (min-width: $desktop) {
+		font-size: 20px;
+		line-height: 24px;
+		align-items: center;
+		text-align: center;
+		margin-left: 90px;
+		padding-top: 18px;
+	}
+}
+
+.member-fourbox {
+	width: 230px;
+	height: 90px;
+	margin-left: 205px;
+	background: rgba(125, 17, 101, 0.2);
+	mix-blend-mode: hard-light;
+	box-shadow: 20px 15px 10px rgba(0, 0, 0, 0.5);
+	border-radius: 20px;
+
+	@media screen and (min-width: $desktop) {
+		width: 577px;
+		height: 120px;
+		margin-left: 350px;
+	}
+}
+
+.memberfourtext {
+	color: white;
+	font-family: Jura, sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 15px;
+	padding-top: 8px;
+	padding-bottom: 5px;
+	line-height: 20px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+
+	@media screen and (min-width: $desktop) {
+		font-size: 20px;
+		line-height: 24px;
+		align-items: center;
+		text-align: center;
+		margin-left: 130px;
+		padding-top: 18px;
+	}
 }
