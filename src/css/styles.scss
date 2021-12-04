@@ -49,6 +49,15 @@ body {
 	background-size: cover;
 	background-position: center;
 	height: 100vh;
+	font-family: Jura, sans-serif;
+}
+
+h1 {
+	font-family: Jura, sans-serif;
+}
+
+h4 {
+	font-family: Jura, sans-serif;
 }
 
 nav {
@@ -81,7 +90,6 @@ nav {
 	position: relative;
 	width: 241px;
 	height: 71px;
-	font-family: Jura, sans-serif;
 	font-style: normal;
 	font-weight: bold;
 	font-size: 15px;
@@ -107,7 +115,6 @@ nav {
 
 .reftomood {
 	position: relative;
-	font-family: Jura, sans-serif;
 	font-style: normal;
 	font-weight: bold;
 	font-size: 15px;
@@ -133,7 +140,6 @@ nav {
 
 .reftores {
 	position: relative;
-	font-family: Jura, sans-serif;
 	font-style: normal;
 	font-weight: bold;
 	font-size: 15px;
@@ -160,7 +166,6 @@ nav {
 
 .reftoact {
 	position: relative;
-	font-family: Jura, sans-serif;
 	font-weight: 700;
 	font-size: 15px;
 	margin-left: 330px;
@@ -185,9 +190,9 @@ nav {
 
 .projectbox-aboutus {
 	position: relative;
-	width: 430px;
+	width: 400px;
 	height: 320px;
-	left: 28px;
+	left: 44px;
 	top: 50px;
 	background: #c4c4c4;
 	box-shadow: 5px 4px 100px 40px rgba(0, 0, 0, 0.5);
@@ -211,7 +216,6 @@ nav {
 }
 
 .project-aboutus {
-	font-family: Jura, sans-serif;
 	font-weight: 700;
 	font-size: 22px;
 	line-height: 24px;
@@ -236,7 +240,6 @@ nav {
 
 .projecttext-aboutus {
 	position: relative;
-	font-family: Jura, sans-serif;
 	font-style: normal;
 	font-weight: bold;
 	font-size: 15px;
@@ -260,33 +263,32 @@ nav {
 }
 
 .meet-teambox {
-	width: 222px;
+	width: 225px;
 	height: 69px;
 	position: relative;
 	background: rgba(153, 58, 157, 0.8);
 	mix-blend-mode: hard-light;
 	margin-top: 70px;
-	margin-left: 120px;
+	margin-left: 90px;
 	box-shadow: 10px 10px 10px 20px rgba(0, 0, 0, 0.4);
 	border-radius: 30px;
 
 	@media screen and (min-width: $tablet-vertical) {
 		margin-left: 170px;
 		margin-top: 85px;
-		width: 270px;
-		height: 80px;
+		width: 275px;
+		height: 85px;
 	}
 
 	@media screen and (min-width: $desktop) {
 		width: 370px;
 		height: 120px;
 		margin-top: 100px;
-		margin-left: 285px;
+		margin-left: 275px;
 	}
 }
 
 .meetteamtext {
-	font-family: Jura, sans-serif;
 	font-style: normal;
 	font-weight: bold;
 	position: relative;
@@ -299,7 +301,7 @@ nav {
 	color: white;
 
 	@media screen and (min-width: $tablet-vertical) {
-		font-size: 25px;
+		font-size: 26px;
 		padding-top: 30px;
 	}
 
@@ -311,9 +313,11 @@ nav {
 
 .member-onebox {
 	position: relative;
-	width: 230px;
-	height: 95px;
-	margin-left: 205px;
+	width: 220px;
+	height: 100px;
+	margin-left: 145px;
+	padding-left: 15px;
+	padding-right: 15px;
 	margin-top: 60px;
 	background: rgba(6, 189, 214, 0.4);
 	mix-blend-mode: hard-light;
@@ -322,20 +326,19 @@ nav {
 
 	@media screen and (min-width: $tablet-vertical) {
 		width: 300px;
-		height: 100px;
-		margin-left: 320px;
+		height: 110px;
+		margin-left: 250px;
 	}
 
 	@media screen and (min-width: $desktop) {
-		width: 435px;
-		height: 140px;
-		margin-left: 450px;
+		width: 445px;
+		height: 160px;
+		margin-left: 380px;
 	}
 }
 
 .memberonetext {
 	color: white;
-	font-family: Jura, sans-serif;
 	font-style: normal;
 	font-weight: bold;
 	font-size: 15px;
@@ -351,25 +354,51 @@ nav {
 		line-height: 22px;
 		align-items: center;
 		text-align: center;
-		margin-left: 25px;
-		padding-top: 10px;
+		margin-left: 23px;
+		padding-top: 20px;
 	}
 
 	@media screen and (min-width: $desktop) {
-		font-size: 22px;
+		font-size: 23px;
 		line-height: 24px;
 		align-items: center;
 		text-align: center;
-		margin-left: 50px;
-		padding-top: 30px;
+		margin-left: 42px;
+		padding-top: 40px;
+	}
+}
+
+.melissa {
+	position: relative;
+	width: 105px;
+	height: 105px;
+	box-shadow: 4px 2px 4px rgba(125, 17, 101, 0.7);
+	border-radius: 80px;
+	top: -110px;
+	left: -150px;
+
+	@media screen and (min-width: $tablet-vertical) {
+		width: 115px;
+		height: 115px;
+		top: -105px;
+		left: -220px;
+	}
+
+	@media screen and (min-width: $desktop) {
+		width: 165px;
+		height: 165px;
+		top: -140px;
+		left: -300px;
 	}
 }
 
 .member-twobox {
 	position: relative;
-	width: 230px;
-	height: 95px;
-	margin-left: 205px;
+	width: 220px;
+	height: 100px;
+	margin-left: 145px;
+	padding-left: 15px;
+	padding-right: 15px;
 	background: rgba(7, 168, 190, 0.6);
 	mix-blend-mode: hard-light;
 	box-shadow: 10px 5px 10px 10px rgba(0, 0, 0, 0.6);
@@ -377,20 +406,19 @@ nav {
 
 	@media screen and (min-width: $tablet-vertical) {
 		width: 300px;
-		height: 100px;
-		margin-left: 320px;
+		height: 110px;
+		margin-left: 250px;
 	}
 
 	@media screen and (min-width: $desktop) {
-		width: 435px;
-		height: 140px;
-		margin-left: 450px;
+		width: 445px;
+		height: 160px;
+		margin-left: 380px;
 	}
 }
 
 .membertwotext {
 	color: white;
-	font-family: Jura, sans-serif;
 	font-style: normal;
 	font-weight: bold;
 	font-size: 15px;
@@ -407,24 +435,50 @@ nav {
 		align-items: center;
 		text-align: center;
 		margin-left: 20px;
-		padding-top: 10px;
+		padding-top: 20px;
 	}
 
 	@media screen and (min-width: $desktop) {
-		font-size: 22px;
+		font-size: 23px;
 		line-height: 24px;
 		align-items: center;
 		text-align: center;
-		margin-left: 50px;
-		padding-top: 30px;
+		margin-left: 40px;
+		padding-top: 40px;
+	}
+}
+
+.chloe {
+	position: relative;
+	width: 105px;
+	height: 105px;
+	box-shadow: 4px 2px 4px rgba(125, 17, 101, 0.7);
+	border-radius: 80px;
+	top: -110px;
+	left: -150px;
+
+	@media screen and (min-width: $tablet-vertical) {
+		width: 115px;
+		height: 115px;
+		top: -105px;
+		left: -220px;
+	}
+
+	@media screen and (min-width: $desktop) {
+		width: 165px;
+		height: 165px;
+		top: -140px;
+		left: -300px;
 	}
 }
 
 .member-threebox {
-	width: 230px;
 	position: relative;
-	height: 95px;
-	margin-left: 205px;
+	width: 220px;
+	height: 100px;
+	margin-left: 145px;
+	padding-left: 15px;
+	padding-right: 15px;
 	background: rgba(129, 56, 154, 0.7);
 	mix-blend-mode: hard-light;
 	box-shadow: 20px 15px 10px rgba(0, 0, 0, 0.5);
@@ -432,20 +486,19 @@ nav {
 
 	@media screen and (min-width: $tablet-vertical) {
 		width: 300px;
-		height: 100px;
-		margin-left: 320px;
+		height: 110px;
+		margin-left: 250px;
 	}
 
 	@media screen and (min-width: $desktop) {
-		width: 435px;
-		height: 140px;
-		margin-left: 450px;
+		width: 445px;
+		height: 160px;
+		margin-left: 380px;
 	}
 }
 
 .memberthreetext {
 	color: white;
-	font-family: Jura, sans-serif;
 	font-style: normal;
 	font-weight: bold;
 	font-size: 15px;
@@ -462,23 +515,50 @@ nav {
 		align-items: center;
 		text-align: center;
 		margin-left: 20px;
-		padding-top: 10px;
+		padding-top: 20px;
 	}
 
 	@media screen and (min-width: $desktop) {
-		font-size: 22px;
+		font-size: 23px;
 		line-height: 24px;
 		align-items: center;
 		text-align: center;
-		margin-left: 50px;
-		padding-top: 30px;
+		margin-left: 40px;
+		padding-top: 40px;
+	}
+}
+
+.maria {
+	position: relative;
+	width: 105px;
+	height: 105px;
+	box-shadow: 4px 2px 4px rgba(32, 185, 212, 0.63);
+	border-radius: 80px;
+	top: -110px;
+	left: -150px;
+
+	@media screen and (min-width: $tablet-vertical) {
+		width: 115px;
+		height: 115px;
+		top: -105px;
+		left: -220px;
+	}
+
+	@media screen and (min-width: $desktop) {
+		width: 165px;
+		height: 165px;
+		top: -140px;
+		left: -300px;
 	}
 }
 
 .member-fourbox {
-	width: 230px;
-	height: 95px;
-	margin-left: 205px;
+	position: relative;
+	width: 220px;
+	height: 100px;
+	margin-left: 145px;
+	padding-left: 15px;
+	padding-right: 15px;
 	background: rgba(125, 17, 101, 0.7);
 	mix-blend-mode: hard-light;
 	box-shadow: 20px 15px 10px rgba(0, 0, 0, 0.5);
@@ -486,24 +566,24 @@ nav {
 
 	@media screen and (min-width: $tablet-vertical) {
 		width: 300px;
-		height: 100px;
-		margin-left: 320px;
+		height: 110px;
+		margin-left: 250px;
 	}
 
 	@media screen and (min-width: $desktop) {
-		width: 435px;
-		height: 140px;
-		margin-left: 450px;
+		width: 445px;
+		height: 160px;
+		margin-left: 380px;
 	}
 }
 
 .memberfourtext {
 	color: white;
-	font-family: Jura, sans-serif;
 	font-style: normal;
 	font-weight: bold;
 	font-size: 15px;
-	padding-top: 8px;
+	padding-top: 15px;
+	padding-left: 25px;
 	padding-bottom: 5px;
 	line-height: 20px;
 	display: flex;
@@ -515,16 +595,40 @@ nav {
 		line-height: 22px;
 		align-items: center;
 		text-align: center;
-		margin-left: 25px;
-		padding-top: 10px;
+		margin-left: 30px;
+		padding-top: 20px;
 	}
 
 	@media screen and (min-width: $desktop) {
-		font-size: 22px;
+		font-size: 23px;
 		line-height: 24px;
 		align-items: center;
 		text-align: center;
-		margin-left: 50px;
-		padding-top: 30px;
+		margin-left: 65px;
+		padding-top: 40px;
+	}
+}
+
+.garrett {
+	position: relative;
+	width: 105px;
+	height: 105px;
+	box-shadow: 4px 2px 4px rgba(32, 185, 212, 0.7);
+	border-radius: 80px;
+	top: -95px;
+	left: -150px;
+
+	@media screen and (min-width: $tablet-vertical) {
+		width: 115px;
+		height: 115px;
+		top: -105px;
+		left: -220px;
+	}
+
+	@media screen and (min-width: $desktop) {
+		width: 165px;
+		height: 165px;
+		top: -140px;
+		left: -300px;
 	}
 }
