@@ -15,27 +15,51 @@
 <body>
 	<div class="topnav">
 		<a class="active" href="index.html">home</a>
-		<a class="mood-selector" href="moodselector.html">mood selector</a>
-		<a class="your-music" href="results.html">your music</a>
 		<a class="about-us" href="aboutus.html">about us</a>
 	</div>
 
-	<div class="start-container">
+
+	<div class="start-container" id='start-window'>
 		<div class="blue-banner">
 			<div class="x-button">
 			</div>
 			<h3 class="welcome">Welcome</h3>
 		</div>
 		<p class="feeling">How are you feeling today?</p>
+	</div>
+	<div class="container" id="mood-window">
+		<div class="blue-banner">
+			<div class="x-button">
+				<div class="x-1"></div>
+				<div class="x-2"></div>
+			</div>
+			<h3 class="banner">Mood Selector</h3>
+		</div>
+		<div class="container-1">
+			<p class="heading">Choose Your Mood:</p>
+			<div class="wrapper">
+				<div class="section">
+					<ul class="emojis">
+						<li class="slide-emoji"><img src="images/emoji-1.png" alt=""></li>
+						<li><img src="images/emoji-2.png" alt=""></li>
+						<li><img src="images/emoji-4.png" alt=""></li>
+						<li><img src="images/emoji-4.png" alt=""></li>
+						<li><img src="images/emoji-5.png" alt=""></li>
+					</ul>
+				</div>
+				<div class="slider">
+					<div class="thumb"><span></span></div>
+					<div class="progress-bar"></div>
+					<input type="range" min="0" value="0" max="100">
+				</div>
+			</div>
+		</div>
 		<div class="start-journey">
-			<button class="button-journey">
-				Start your music journey
-			</button>
+			<button class="button-journey" id="js-login">See My Results</button>
 		</div>
 	</div>
-	<div class="orange-border">
-		<p class="take-our-survey">Take our survey to find a perfect song for your current mood.</p>
-	</div>
+	<script>
+	</script>
 </body>
 
 </html>
