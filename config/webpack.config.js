@@ -28,6 +28,7 @@ module.exports = {
     open: true,
     port: config.port,
     host: config.dev_host,
+	 historyApiFallback: true,
   },
   module: {
     rules: loaders,
