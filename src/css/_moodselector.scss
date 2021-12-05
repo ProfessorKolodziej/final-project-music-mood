@@ -19,7 +19,7 @@ body {
 	border-width: 4px;
 }
 
-.blue-banner {
+.blue-banner-2 {
 	position: relative;
 	width: 229.55px;
 	height: 40px;
@@ -28,7 +28,7 @@ body {
 	align-items: center;
 }
 
-.x-button {
+.x-button-2 {
 	border-style: outset;
 	position: absolute;
 	width: 18px;
@@ -40,7 +40,7 @@ body {
 	justify-content: center;
 }
 
-.x-button::before {
+.x-button-2::before {
 	content: "\d7";
 	font-size: 26px;
 }
@@ -221,14 +221,14 @@ body.like .thumb span {
 	background: linear-gradient(#fed151, #de981f);
 }
 
-.start-journey {
+.see-results {
 	width: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 
-.button-journey {
+.button-results {
 	position: absolute;
 	width: 131px;
 	height: 26px;
@@ -239,8 +239,7 @@ body.like .thumb span {
 	color: black;
 	font-size: 9px;
 	top: 400px;
-	border-color: #ade1e4 #4acdd6 #4acdd6 #ade1e4;
-	border-style: outset;
+	border-color: #4acdd6;
 }
 
 @media screen and (min-width: 768px) {
@@ -268,20 +267,20 @@ body.like .thumb span {
 		border-width: 8px;
 	}
 
-	.blue-banner {
+	.blue-banner-2 {
 		position: relative;
 		width: 732.57px;
 		height: 69.4px;
 	}
 
-	.x-button {
+	.x-button-2 {
 		width: 32px;
 		height: 32px;
 		left: 680px;
 		border-width: 3px;
 	}
 
-	.x-button::before {
+	.x-button-2::before {
 		content: "\d7";
 		font-size: 45px;
 	}
@@ -313,7 +312,7 @@ body.like .thumb span {
 		width: 50%;
 	}
 
-	.button-journey {
+	.button-results {
 		width: 254px;
 		height: 46px;
 		font-size: 15px;
@@ -344,20 +343,20 @@ body.like .thumb span {
 		top: 264px;
 	}
 
-	.blue-banner {
+	.blue-banner-2 {
 		position: relative;
 		width: 811.09px;
 		height: 69.4px;
 	}
 
-	.x-button {
+	.x-button-2 {
 		width: 32px;
 		height: 32px;
 		left: 750px;
 		border-width: 3px;
 	}
 
-	.x-button::before {
+	.x-button-2::before {
 		content: "\d7";
 		font-size: 45px;
 	}
@@ -375,7 +374,7 @@ body.like .thumb span {
 		margin-left: 150px;
 	}
 
-	.button-journey {
+	.button-results {
 		width: 254px;
 		height: 46px;
 		font-size: 15px;
