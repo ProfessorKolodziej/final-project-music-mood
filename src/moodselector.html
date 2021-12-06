@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Update your description here" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Jura:wght@300;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="/css/_moodselector.scss">
+	<title>mood selector page</title>
+</head>
+
+<body>
+	<div class="topnav">
+		<a class="active" href="index.html">home</a>
+		<a class="mood-selector" href="moodselector.html">mood selector</a>
+		<a class="your-music" href="results.html">your music</a>
+		<a class="about-us" href="aboutus.html">about us</a>
+	</div>
+
+	<div class="container">
+		<div class="blue-banner">
+			<div class="x-button">
+				<div class="x-1"></div>
+				<div class="x-2"></div>
+			</div>
+			<h3 class="banner">Mood Selector</h3>
+		</div>
+		<div class="container-1">
+			<p class="heading">Choose Your Mood:</p>
+			<div class="wrapper">
+				<div class="section">
+					<ul class="emojis">
+						<li class="slide-emoji"><img src="images/emoji-1.png" alt=""></li>
+						<li><img src="images/emoji-2.png" alt=""></li>
+						<li><img src="images/emoji-4.png" alt=""></li>
+						<li><img src="images/emoji-4.png" alt=""></li>
+						<li><img src="images/emoji-5.png" alt=""></li>
+					</ul>
+				</div>
+				<div class="slider">
+					<div class="thumb"><span></span></div>
+					<div class="progress-bar"></div>
+					<input type="range" min="0" value="0" max="100">
+				</div>
+			</div>
+		</div>
+		<div class="start-journey">
+			<button class="button-journey">See My Results</button>
+		</div>
+	</div>
+	<script>
+		const body = document.querySelector("body");
+		const emoji = document.querySelector(".slide-emoji");
+		const input = document.querySelector("input");
+		const bar = document.querySelector(".progress-bar");
+		const thumb = document.querySelector(".thumb");
+		input.oninput = () => {
+			let sliderValue = input.value;
+			thumb.style.left = sliderValue + '%';
+			bar.style.width = sliderValue + '%';
+			if (sliderValue < 20) {
+				emoji.style.marginTop = "0px";
+				body.classList.add("angry");
+				body.classList.remove("confuse");
+				body.classList.remove("like");
+			}
+			if (sliderValue >= 20) {
+				emoji.style.marginTop = "-140px";
+				body.classList.add("confuse");
+				body.classList.remove("angry");
+				body.classList.remove("like");
+			}
+			if (sliderValue >= 40) {
+				emoji.style.marginTop = "-280px";
+			}
+			if (sliderValue >= 60) {
+				emoji.style.marginTop = "-420px";
+				body.classList.add("like");
+				body.classList.remove("confuse");
+				body.classList.remove("angry");
+			}
+			if (sliderValue >= 80) {
+				emoji.style.marginTop = "-560px";
+			}
+		}
+	</script>
+</body>
+
+</html>
