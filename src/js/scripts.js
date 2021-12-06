@@ -1,7 +1,6 @@
 // Add your scripts here
 import SpotifyWebApi from 'spotify-web-api-node';
 import ServerMethods from 'spotify-web-api-node/src/server-methods';
-
 // Patch missing server methods to client methods
 // Fix found in https://github.com/thelinmichael/spotify-web-api-node/issues/342
 // eslint-disable-next-line no-underscore-dangle
@@ -102,7 +101,7 @@ let sliderValue = input.value;
 const randomOffset = Math.floor(Math.random() * 200);
 
 spotifyApi.searchTracks('Sad Music', { limit: 1, offset: randomOffset }).then(
-	function(data) {
+	function (data) {
 		var track = data.body.tracks.items[0];
 		console.log('album cover', track.album.images[0]);
 		console.log('track name', track.name);
@@ -114,9 +113,9 @@ spotifyApi.searchTracks('Sad Music', { limit: 1, offset: randomOffset }).then(
 		document.body.appendChild(trackName);
 	},
 	// eslint-disable-next-line prefer-arrow-callback
-	function(err) {
+	function (err) {
 		console.error(err);
-	 },
+	},
 );
 
 
