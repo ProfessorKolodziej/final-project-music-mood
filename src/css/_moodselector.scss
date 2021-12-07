@@ -10,16 +10,40 @@ body {
 .container {
 	position: absolute;
 	width: 229.55px;
-	height: 450px;
-	left: 48.73px;
-	top: 187.08px;
+	height: 275px;
+	left: 45.225px;
+	top: 140px;
 	background: #c4c4c4;
 	box-shadow: 5px 4px 100px 40px rgba(0, 0, 0, 0.5);
 	border-style: outset;
 	border-width: 4px;
 }
 
-.blue-banner-2 {
+.topnav {
+	position: absolute;
+	width: 297px;
+	height: 31.45px;
+	top: 20px;
+	left: 12px;
+	background: rgba(153, 58, 157, 0.9);
+	box-sizing: border-box;
+	border-radius: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+a {
+	font-family: Jura, sans-serif;
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 12px;
+	color: #fff;
+	padding: 40px;
+	text-decoration: none;
+}
+
+.blue-banner {
 	position: relative;
 	width: 229.55px;
 	height: 40px;
@@ -28,7 +52,7 @@ body {
 	align-items: center;
 }
 
-.x-button-2 {
+.x-button {
 	border-style: outset;
 	position: absolute;
 	width: 18px;
@@ -40,7 +64,7 @@ body {
 	justify-content: center;
 }
 
-.x-button-2::before {
+.x-button::before {
 	content: "\d7";
 	font-size: 26px;
 }
@@ -65,160 +89,69 @@ body {
 	position: absolute;
 	padding-left: 50px;
 	text-align: center;
-	top: 40px;
+	top: 60px;
 	font-family: Jura, sans-serif;
 	font-size: 15px;
 }
 
-.body-1 {
-	display: flex;
-	transition: all 0.3s ease;
-}
-
-.body.angry {
-	background: linear-gradient(#fd8d58, #dc611e);
-}
-
-.body.confuse {
-	background: linear-gradient(#fea954, #da7315);
-}
-
-.body.like {
-	background: linear-gradient(#fed151, #de981f);
-}
-
-.wrapper {
-	background: #f6f6f6;
-	padding: 40px;
-	width: 100%;
-	height: 100%;
-	border-style: inset;
-	border-width: 4px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-	box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
-	margin-top: 50px;
-}
-
-.wrapper .section {
-	height: 140px;
-	width: 140px;
-	overflow: hidden;
-	margin-left: -30px;
-}
-
-.wrapper .section .emojis {
-	height: 500%;
-	display: flex;
-	flex-direction: column;
-}
-
-.wrapper .section li {
-	height: 20%;
-	width: 100%;
-	list-style: none;
-	transition: all 0.3s ease;
-}
-
-.section li img {
-	height: 100%;
-	width: 100%;
-}
-
-.wrapper .slider {
-	margin-top: 40px;
-	height: 12px;
-	width: 100%;
-	position: relative;
-	background: #d9d9d9;
-	border-radius: 50px;
-}
-
-.slider input {
-	height: 100%;
-	width: 100%;
-	-webkit-appearance: none;
+.mood {
 	position: absolute;
-	background: none;
-	outline: none;
-	top: 0;
-	z-index: 2;
+	top: -13px;
+	left: 10px;
 }
 
-.slider input::-webkit-slider-thumb {
-	-webkit-appearance: none;
-	height: 20px;
-	width: 20px;
-	background: none;
-	cursor: pointer;
-}
-
-.slider .progress-bar {
-	height: 100%;
-	width: 0%;
-	background: linear-gradient(45deg, #fd8d58, #dc611e);
-	border-radius: 50px;
+.mood-button {
 	position: relative;
-}
-
-body.angry .progress-bar {
-	background: linear-gradient(45deg, #fd8d58, #dc611e);
-}
-
-body.confuse .progress-bar {
-	background: linear-gradient(45deg, #fea954, #da7315);
-}
-
-body.like .progress-bar {
-	background: linear-gradient(45deg, #fed151, #de981f);
-}
-
-.slider .thumb {
-	height: 25px;
-	width: 25px;
-	background: #dc611e;
-	border-radius: 50%;
+	border-style: outset;
 	position: absolute;
-	top: 50%;
-	left: 0;
-	transform: translate(-50%, -50%);
+	width: 30px;
+	height: 30px;
+	background: #c4c4c4;
+	left: 160px;
+	top: -15px;
+	font-size: 10px;
+}
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f1f1f1;
+	width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 	z-index: 1;
-	padding: 2px;
 }
 
-body.angry .thumb {
-	background: #dc611e;
-}
-
-body.confuse .thumb {
-	background: #da7315;
-}
-
-body.like .thumb {
-	background: #de981f;
-}
-
-.slider .thumb span {
-	height: 100%;
-	width: 100%;
-	border: 2px solid #f6f6f6;
-	border-radius: 50%;
-	background: linear-gradient(#fd8d58, #dc611e);
+.dropdown-content p {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
 	display: block;
 }
 
-body.angry .thumb span {
-	background: linear-gradient(#fd8d58, #dc611e);
+.dropdown-content p:hover {
+	background-color: #ddd;
 }
 
-body.confuse .thumb span {
-	background: linear-gradient(#fea954, #da7315);
+.dropdown:hover .dropdown-content {
+	display: block;
 }
 
-body.like .thumb span {
-	background: linear-gradient(#fed151, #de981f);
+.wrapper {
+	position: absolute;
+	width: 200px;
+	height: 40px;
+	background: white;
+	left: 10.775px;
+	top: 120px;
+	border-style: inset;
+	border-width: 3px;
+	display: flex;
+	align-items: center;
 }
 
 .see-results {
@@ -238,7 +171,7 @@ body.like .thumb span {
 	justify-content: center;
 	color: black;
 	font-size: 9px;
-	top: 400px;
+	top: 200px;
 	border-color: #4acdd6;
 }
 

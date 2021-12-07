@@ -17,48 +17,57 @@
 		<a class="active" href="index.html">home</a>
 		<a class="about-us" href="aboutus.html">about us</a>
 	</div>
-
-
-	<div class="start-container" id='start-window'>
-		<div class="blue-banner">
-			<div class="x-button">
-			</div>
-			<h3 class="welcome">Welcome</h3>
-		</div>
-		<p class="feeling">How are you feeling today?</p>
-	</div>
 	<div class="container" id="mood-window">
 		<div class="blue-banner">
 			<div class="x-button">
-				<div class="x-1"></div>
-				<div class="x-2"></div>
 			</div>
 			<h3 class="banner">Mood Selector</h3>
 		</div>
 		<div class="container-1">
 			<p class="heading">Choose Your Mood:</p>
 			<div class="wrapper">
-				<div class="section">
-					<ul class="emojis">
-						<li class="slide-emoji"><img src="images/emoji-1.png" alt=""></li>
-						<li><img src="images/emoji-2.png" alt=""></li>
-						<li><img src="images/emoji-4.png" alt=""></li>
-						<li><img src="images/emoji-4.png" alt=""></li>
-						<li><img src="images/emoji-5.png" alt=""></li>
-					</ul>
-				</div>
-				<div class="slider">
-					<div class="thumb"><span></span></div>
-					<div class="progress-bar"></div>
-					<input type="range" min="0" value="0" max="100">
+				<p id="mood" class="mood"></p>
+				<div class="dropdown">
+					<button onclick="myFunction()" class="mood-button"> &#9660</button>
+					<div class="dropdown-content">
+						<p onclick="energetic()" id="energetic">energetic</p>
+						<p onclick="happy()" id="happy">happy</p>
+						<p onclick="chill()" id="chill">chill</p>
+						<p onclick="sad()" id="sad">sad</p>
+						<p onclick="angry()" id="angry">angry</p>
+					</div>
 				</div>
 			</div>
+			<div class="slider">
+				<div class="thumb"><span></span></div>
+				<div class="progress-bar"></div>
+				<input type="range" min="0" value="0" max="100">
+			</div>
+
 		</div>
-		<div class="start-journey">
-			<button class="button-journey" id="js-login">See My Results</button>
+		<div class="see-results">
+			<button class="button-results" id="js-login">See My Results</button>
 		</div>
 	</div>
+
 	<script>
+
+		function energetic() {
+			document.getElementById("mood").innerHTML = "energetic";
+		}
+
+		function happy() {
+			document.getElementById("mood").innerHTML = "happy";
+		}
+		function chill() {
+			document.getElementById("mood").innerHTML = "chill";
+		}
+		function sad() {
+			document.getElementById("mood").innerHTML = "sad";
+		}
+		function angry() {
+			document.getElementById("mood").innerHTML = "angry";
+		}
 	</script>
 </body>
 
