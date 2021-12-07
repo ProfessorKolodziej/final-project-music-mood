@@ -80,14 +80,15 @@ a {
 	line-height: 14px;
 }
 
-.container-1 {
-	align-items: center;
+.choose-mood {
+	width: 100%;
 	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .heading {
 	position: absolute;
-	padding-left: 50px;
 	text-align: center;
 	top: 60px;
 	font-family: Jura, sans-serif;
@@ -124,6 +125,7 @@ a {
 	width: 160px;
 	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 	z-index: 1;
+	left: 160px;
 }
 
 .dropdown-content p {
@@ -188,50 +190,42 @@ a {
 		font-weight: bold;
 		font-size: 20px;
 		line-height: 23.66px;
-		padding: 32.31px;
+		padding: 80px;
 	}
 
 	.container {
 		position: absolute;
-		width: 732.57px;
-		height: 630px;
-		left: 136px;
+		width: 626.72px;
+		height: 400px;
+		left: 70.625px;
 		top: 269px;
 		border-width: 8px;
 	}
 
-	.blue-banner-2 {
+	.blue-banner {
 		position: relative;
-		width: 732.57px;
+		width: 626.72px;
 		height: 69.4px;
 	}
 
-	.x-button-2 {
+	.x-button {
 		width: 32px;
 		height: 32px;
-		left: 680px;
-		border-width: 3px;
+		left: 570px;
+		border-width: 4px;
 	}
 
-	.x-button-2::before {
+	.x-button::before {
 		content: "\d7";
 		font-size: 45px;
 	}
 
 	.banner {
-		left: 17px;
-		top: 10px;
-		font-size: 16px;
-		line-height: 16.56px;
-	}
-
-	.body-1 {
-		padding-left: 200px;
-		padding-top: 100px;
+		left: 20px;
+		font-size: 20px;
 	}
 
 	.heading {
-		margin-left: 100px;
 		top: 74px;
 		font-size: 27px;
 		font-family: Jura, sans-serif;
@@ -240,16 +234,24 @@ a {
 
 	.wrapper {
 		border-width: 6px;
-		margin-top: 100px;
-		margin-left: 140px;
-		width: 50%;
+		top: 170px;
+		width: 300px;
+		left: 157.36px;
+	}
+	.mood-button {
+		left: 260px;
+		border-width: 3px;
+	}
+
+	.dropdown-content {
+		left: 260px;
 	}
 
 	.button-results {
 		width: 254px;
 		height: 46px;
 		font-size: 15px;
-		top: 530px;
+		top: 280px;
 		border-width: 5px;
 	}
 }
@@ -266,52 +268,59 @@ a {
 	a {
 		font-size: 20px;
 		line-height: 24px;
-		padding: 49.08px;
+		padding: 200px;
 	}
 
 	.container {
 		width: 811.09px;
-		height: 657px;
-		left: 241px;
+		height: 500px;
+		left: 186.455px;
 		top: 264px;
 	}
 
-	.blue-banner-2 {
+	.blue-banner {
 		position: relative;
 		width: 811.09px;
 		height: 69.4px;
 	}
 
-	.x-button-2 {
+	.x-button {
 		width: 32px;
 		height: 32px;
 		left: 750px;
-		border-width: 3px;
+		border-width: 4px;
 	}
 
-	.x-button-2::before {
+	.x-button::before {
 		content: "\d7";
-		font-size: 45px;
+		font-size: 50px;
 	}
 
 	.heading {
-		padding-right: 0;
-		padding-left: 80px;
-		top: 74px;
-		font-size: 27px;
+		top: 120px;
+		font-size: 30px;
 		font-family: Jura, sans-serif;
 		width: 445px;
 	}
 
 	.wrapper {
-		margin-left: 150px;
+		top: 250px;
+		width: 350px;
+		left: 224.545px;
+	}
+
+	.mood-button {
+		left: 315px;
+	}
+
+	.dropdown-content {
+		left: 315px;
 	}
 
 	.button-results {
 		width: 254px;
 		height: 46px;
 		font-size: 15px;
-		top: 540px;
-		border-width: 5px;
+		top: 375px;
 	}
 }
