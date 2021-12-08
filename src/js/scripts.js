@@ -27,7 +27,9 @@ function logIn() {
 	window.location.href = authorizeURL;
 }
 
-loginButton.addEventListener('click', logIn);
+if (loginButton !== null) {
+	loginButton.addEventListener('click', logIn);
+}
 
 // Look for parameters in the URL
 const queryString = window.location.hash;
@@ -48,6 +50,7 @@ if (queryString !== '') {
 	// document.getElementsById('label').innerText = 'Your Music Recommendation';
 	document.getElementById('start-window').style.display = 'none';
 	document.getElementById('mood-window').style.display = 'none';
+	document.getElementById('orange-box').style.display = 'none';
 	// document.getElementById('drop-down').style.display = 'none';
 }
 
@@ -56,17 +59,23 @@ if (queryString !== '') {
 const randomOffset = Math.floor(Math.random() * 500);
 
 spotifyApi.searchTracks('sad', { limit: 1, offset: randomOffset }).then(
-	function (data) {
+	(data) => {
 		const track = data.body.tracks.items[0];
 		const albumCover = document.createElement('img');
-		const element = document.getElementById('jsfill');
+		// const element = document.getElementById('jsfill');
 		albumCover.setAttribute('src', track.album.images[0].url);
 		document.body.appendChild(albumCover);
-		element.innerText = track.name;
-		alert(track.name);
+		// element.innerText = track.name;
+		// alert(track.name);
 	},
+<<<<<<< HEAD
 	// eslint-disable-next-line prefer-arrow-callback
 	function (err) {
+=======
+	// eslint-disable-next-line prefer-arrow-callback, func-names
+	function (err) {
+		// eslint-disable-next-line no-console
+>>>>>>> c738b1a000ff163dcd8cfef143c0143e1ab8d7b0
 		console.error(err);
 	},
 );
