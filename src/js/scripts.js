@@ -66,7 +66,7 @@ spotifyApi.searchTracks('sad', { limit: 1, offset: randomOffset }).then(
 		alert(track.name);
 	},
 	// eslint-disable-next-line prefer-arrow-callback
-	function(err) {
+	function (err) {
 		console.error(err);
 	},
 );
