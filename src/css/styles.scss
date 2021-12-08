@@ -13,7 +13,6 @@ $desktop: 1200px;
 @import "home";
 @import "results";
 @import "moodselector";
-@import "aboutus";
 
 // You can still write styles in this file too.
 // Here's an example of how you could write media queries more easily with Sass.
@@ -119,7 +118,7 @@ nav {
 	font-weight: bold;
 	font-size: 15px;
 	left: -95px;
-	top: - 28px;
+	top: -28px;
 	display: inline-block;
 	text-align: center;
 	color: #fff;
