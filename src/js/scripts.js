@@ -57,7 +57,7 @@ if (queryString !== '') {
 const randomOffset = Math.floor(Math.random() * 500);
 
 spotifyApi.searchTracks('sad', { limit: 1, offset: randomOffset }).then(
-	function (data) {
+	(data) => {
 		const track = data.body.tracks.items[0];
 		const albumCover = document.createElement('img');
 		// const element = document.getElementById('jsfill');
@@ -66,8 +66,9 @@ spotifyApi.searchTracks('sad', { limit: 1, offset: randomOffset }).then(
 		// element.innerText = track.name;
 		// alert(track.name);
 	},
-	// eslint-disable-next-line prefer-arrow-callback
-	function(err) {
+	// eslint-disable-next-line prefer-arrow-callback, func-names
+	function (err) {
+		// eslint-disable-next-line no-console
 		console.error(err);
 	},
 );

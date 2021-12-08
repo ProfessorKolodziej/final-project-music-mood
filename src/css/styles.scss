@@ -3,18 +3,20 @@
 // Try commenting this out and saving. What changes in the browser?
 @import "~normalize.css";
 
+$large-phone: 500px;
+$tablet-vertical: 768px;
+$desktop: 1200px;
+
 // An example of a partial.
 // Check out the _typography.scss file to edit the CSS inside!
 @import "typography";
 @import "home";
 @import "results";
 @import "moodselector";
+@import "aboutus";
+
 // You can still write styles in this file too.
 // Here's an example of how you could write media queries more easily with Sass.
-
-$large-phone: 500px;
-$tablet-vertical: 768px;
-$desktop: 1200px;
 
 // And some color variables.
 // Look how much easier it is to keep track of what these are than hex codes!
