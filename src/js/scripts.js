@@ -27,7 +27,9 @@ function logIn() {
 	window.location.href = authorizeURL;
 }
 
-loginButton.addEventListener('click', logIn);
+if (loginButton !== null) {
+	loginButton.addEventListener('click', logIn);
+}
 
 // Look for parameters in the URL
 const queryString = window.location.hash;
