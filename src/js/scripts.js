@@ -53,16 +53,17 @@ if (queryString !== '') {
 
 // var input = document.getElementById("mood-selection").textContent;
 
-const randomOffset = Math.floor(Math.random() * 50);
+const randomOffset = Math.floor(Math.random() * 500);
 
-spotifyApi.searchTracks('sad music', { limit: 1, offset: randomOffset }).then(
+spotifyApi.searchTracks('sad', { limit: 1, offset: randomOffset }).then(
 	function (data) {
 		const track = data.body.tracks.items[0];
 		const albumCover = document.createElement('img');
 		const element = document.getElementById('jsfill');
 		albumCover.setAttribute('src', track.album.images[0].url);
 		document.body.appendChild(albumCover);
-		element.innerHTML(track.name);
+		element.innerText = track.name;
+		alert(track.name);
 	},
 	// eslint-disable-next-line prefer-arrow-callback
 	function(err) {
