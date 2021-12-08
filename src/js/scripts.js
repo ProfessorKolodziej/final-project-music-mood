@@ -48,6 +48,7 @@ if (queryString !== '') {
 	// document.getElementsById('label').innerText = 'Your Music Recommendation';
 	document.getElementById('start-window').style.display = 'none';
 	document.getElementById('mood-window').style.display = 'none';
+	document.getElementById('orange-box').style.display = 'none';
 	// document.getElementById('drop-down').style.display = 'none';
 }
 
@@ -59,11 +60,11 @@ spotifyApi.searchTracks('sad', { limit: 1, offset: randomOffset }).then(
 	function (data) {
 		const track = data.body.tracks.items[0];
 		const albumCover = document.createElement('img');
-		const element = document.getElementById('jsfill');
+		// const element = document.getElementById('jsfill');
 		albumCover.setAttribute('src', track.album.images[0].url);
 		document.body.appendChild(albumCover);
-		element.innerText = track.name;
-		alert(track.name);
+		// element.innerText = track.name;
+		// alert(track.name);
 	},
 	// eslint-disable-next-line prefer-arrow-callback
 	function(err) {
