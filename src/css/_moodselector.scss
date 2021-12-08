@@ -177,6 +177,28 @@ a {
 	border-color: #4acdd6;
 }
 
+.orange-box {
+	position: absolute;
+	width: 263px;
+	height: 93px;
+	left: 28.5px;
+	top: 490px;
+	background: #ffa149;
+	border-radius: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.suggest-song {
+	font-family: Jura, sans-serif;
+	font-weight: bold;
+	font-size: 15px;
+	line-height: 18px;
+	text-align: center;
+	color: #000;
+}
+
 @media screen and (min-width: 768px) {
 	.topnav {
 		width: 682px;
@@ -198,7 +220,7 @@ a {
 		width: 626.72px;
 		height: 400px;
 		left: 70.625px;
-		top: 269px;
+		top: 185px;
 		border-width: 8px;
 	}
 
@@ -254,6 +276,17 @@ a {
 		top: 280px;
 		border-width: 5px;
 	}
+
+	.orange-box {
+		width: 400px;
+		height: 100px;
+		left: 184px;
+		top: 650px;
+	}
+
+	.suggest-song {
+		font-size: 17px;
+	}
 }
 
 @media screen and (min-width: 1200px) {
@@ -273,9 +306,9 @@ a {
 
 	.container {
 		width: 811.09px;
-		height: 500px;
+		height: 400px;
 		left: 186.455px;
-		top: 264px;
+		top: 200px;
 	}
 
 	.blue-banner {
@@ -297,14 +330,14 @@ a {
 	}
 
 	.heading {
-		top: 120px;
+		top: 90px;
 		font-size: 30px;
 		font-family: Jura, sans-serif;
 		width: 445px;
 	}
 
 	.wrapper {
-		top: 250px;
+		top: 200px;
 		width: 350px;
 		left: 224.545px;
 	}
@@ -321,6 +354,17 @@ a {
 		width: 254px;
 		height: 46px;
 		font-size: 15px;
-		top: 375px;
+		top: 300px;
+	}
+
+	.orange-box {
+		width: 400px;
+		height: 100px;
+		left: 400px;
+		top: 650px;
+	}
+
+	.suggest-song {
+		font-size: 17px;
 	}
 }
