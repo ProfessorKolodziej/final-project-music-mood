@@ -45,91 +45,64 @@ if (queryString !== '') {
 	const nextState = { additionalInformation: 'Authorization granted' };
 	window.history.pushState(nextState, nextTitle, nextURL);
 	loginButton.style.display = 'none';
+	// document.getElementsById('label').innerText = 'Your Music Recommendation';
 	document.getElementById('start-window').style.display = 'none';
 	document.getElementById('mood-window').style.display = 'none';
+	// document.getElementById('drop-down').style.display = 'none';
 }
 
-/* Get Elvis' albums
-spotifyApi.getArtistAlbums('43ZHCT0cAZBISjO8DG9PnE', { limit: 10, offset: 20 }).then(
-	// eslint-disable-next-line prefer-arrow-callback
+// var input = document.getElementById("mood-selection").textContent;
+
+const randomOffset = Math.floor(Math.random() * 50);
+
+spotifyApi.searchTracks('sad music', { limit: 1, offset: randomOffset }).then(
 	function (data) {
-		console.log('Artist albums', data.body);
-	},
-	// eslint-disable-next-line prefer-arrow-callback
-	function (err) {
-		console.error(err);
-	},
-);
-*/
-
-const body = document.querySelector("body");
-const emoji = document.querySelector(".slide-emoji");
-const input = document.querySelector("input");
-const bar = document.querySelector(".progress-bar");
-const thumb = document.querySelector(".thumb");
-input.oninput = () => {
-	let sliderValue = input.value;
-	thumb.style.left = sliderValue + '%';
-	bar.style.width = sliderValue + '%';
-	if (sliderValue < 20) {
-		emoji.style.marginTop = "0px";
-		body.classList.add("angry");
-		body.classList.remove("confuse");
-		body.classList.remove("like");
-	}
-	if (sliderValue >= 20) {
-		emoji.style.marginTop = "-140px";
-		body.classList.add("confuse");
-		body.classList.remove("angry");
-		body.classList.remove("like");
-	}
-	if (sliderValue >= 40) {
-		emoji.style.marginTop = "-280px";
-	}
-	if (sliderValue >= 60) {
-		emoji.style.marginTop = "-420px";
-		body.classList.add("like");
-		body.classList.remove("confuse");
-		body.classList.remove("angry");
-	}
-	if (sliderValue >= 80) {
-		emoji.style.marginTop = "-560px";
-	}
-}
-
-let sliderValue = input.value;
-const randomOffset = Math.floor(Math.random() * 200);
-
-spotifyApi.searchTracks('Sad Music', { limit: 1, offset: randomOffset }).then(
-	function (data) {
-		var track = data.body.tracks.items[0];
-		console.log('album cover', track.album.images[0]);
-		console.log('track name', track.name);
+		const track = data.body.tracks.items[0];
 		const albumCover = document.createElement('img');
-		const trackName = document.createElement('p');
+		const element = document.getElementById('jsfill');
 		albumCover.setAttribute('src', track.album.images[0].url);
-		trackName.setAttribute('name', track.name)
 		document.body.appendChild(albumCover);
-		document.body.appendChild(trackName);
+		element.innerHTML(track.name);
 	},
 	// eslint-disable-next-line prefer-arrow-callback
-	function (err) {
+	function(err) {
 		console.error(err);
 	},
 );
 
-
-// PSUEDOCODE
-/* function returnTrack() {
-		let moodSelection = document.querySelector('button');
-		if (moodSelection == happy) {
-			return random track from happy playlist
-		}
-		else if (moodSelect == sad){
-			return random track from sad playlist
-		}
+/* if (input == 'sad') {
+	spotifyApi.searchTracks('sad music', { limit: 1, offset: randomOffset }).then(
+		function(data) {
+			var track = data.body.tracks.items[0];
+			console.log('album cover', track.album.images[0]);
+			console.log('track name', track.name);
+			const albumCover = document.createElement('img');
+			const element = document.getElementById("track-name");
+			albumCover.setAttribute('src', track.album.images[0].url);
+			document.body.appendChild(albumCover);
+			element.innerHTML(trackName);
+		},
+		// eslint-disable-next-line prefer-arrow-callback
+		function(err) {
+			console.error(err);
+		},
+		);
 	}
-
-	return returnTrack.albumCover
-	return returnTrack.songTitle
-	*/
+if (input == 'happy') {
+	spotifyApi.searchTracks('happy music', { limit: 1, offset: randomOffset }).then(
+		function(data) {
+			var track = data.body.tracks.items[0];
+			console.log('album cover', track.album.images[0]);
+			console.log('track name', track.name);
+			const albumCover = document.createElement('img');
+			albumCover.setAttribute('src', track.album.images[0].url);
+			document.body.appendChild(albumCover);
+			document.getElementById("track-name").innerHTML = track.name;
+		},
+		// eslint-disable-next-line prefer-arrow-callback
+		function(err) {
+			console.error(err);
+		},
+		);
+	}
+*/
