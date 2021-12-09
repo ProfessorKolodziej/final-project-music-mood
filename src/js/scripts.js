@@ -64,6 +64,7 @@ if (mood !== null) {
 			const albumCover = document.createElement('img');
 			const trackname = document.getElementById('trackname');
 			const artistname = document.getElementById('artistname');
+			const bannerId = document.getElementById('banner');
 			albumCover.setAttribute('src', track.album.images[0].url);
 			albumCover.setAttribute('id', 'albumStyle');
 			document.body.appendChild(albumCover);
@@ -71,6 +72,7 @@ if (mood !== null) {
 			const stringArtist = 'Artist: ';
 			trackname.innerText = stringTitle.concat(track.name);
 			artistname.innerText = stringArtist.concat(track.artists[0].name);
+			bannerId.innerText = 'Results';
 		},
 		// eslint-disable-next-line prefer-arrow-callback, func-names
 		function (err) {
