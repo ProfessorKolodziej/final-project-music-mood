@@ -13,7 +13,6 @@ $desktop: 1200px;
 @import "home";
 @import "results";
 @import "moodselector";
-@import "aboutus";
 
 // You can still write styles in this file too.
 // Here's an example of how you could write media queries more easily with Sass.
@@ -113,6 +112,59 @@ nav {
 	}
 }
 
+<<<<<<< HEAD
+=======
+.reftomood {
+	position: relative;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 15px;
+	left: -95px;
+	top: -28px;
+	display: inline-block;
+	text-align: center;
+	color: #fff;
+	text-decoration: none;
+
+	@media screen and (min-width: $tablet-vertical) {
+		font-size: 20px;
+		left: -150px;
+		top: -60px;
+	}
+
+	@media screen and (min-width: $desktop) {
+		font-size: 27px;
+		left: 170px;
+		top: -650px;
+	}
+}
+
+.reftores {
+	position: relative;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 15px;
+	left: -30px;
+	top: -179px;
+	display: inline-block;
+	text-align: center;
+	color: #fff;
+	text-decoration: none;
+
+	@media screen and (min-width: $tablet-vertical) {
+		font-size: 20px;
+		top: -291px;
+		left: 45px;
+	}
+
+	@media screen and (min-width: $desktop) {
+		font-size: 27px;
+		left: 125px;
+		top: -1073px;
+	}
+}
+
+>>>>>>> 59c6c91c12511916303aa0d281a39f5e82b49cb0
 .reftoact {
 	position: absolute;
 	font-weight: 700;
