@@ -24,10 +24,12 @@
 			<h3 class="banner">Mood Selector</h3>
 		</div>
 		<div class="container-1" id="start-window">
-			<div class=choose-mood>
+			<p id="trackname"></p>
+			<p id="artistname"></p>
+			<div class=choose-mood id="choose-mood">
 				<p class="heading" id="label">Choose Your Mood:</p>
 			</div>
-			<div class="wrapper">
+			<div class="wrapper" id="wrapper">
 				<p id="mood" class="mood"></p>
 				<div class="dropdown" id="dropdown">
 					<button onclick="myFunction()" class="mood-button"> &#9660</button>
@@ -48,24 +50,28 @@
 	<div class="orange-box" id="orange-box">
 		<p class="suggest-song">Select a mood and we'll suggest a song</p>
 	</div>
-	<p id="jsfill"></p>
 	<script>
 
 		function energetic() {
 			document.getElementById("mood").innerHTML = "energetic";
+			localStorage.setItem("mood", "energetic");
 		}
 
 		function happy() {
 			document.getElementById("mood").innerHTML = "happy";
+			localStorage.setItem("mood", "happy");
 		}
 		function chill() {
 			document.getElementById("mood").innerHTML = "chill";
+			localStorage.setItem("mood", "chill");
 		}
 		function sad() {
 			document.getElementById("mood").innerHTML = "sad";
+			localStorage.setItem("mood", "sad");
 		}
 		function angry() {
 			document.getElementById("mood").innerHTML = "angry";
+			localStorage.setItem("mood", "angry");
 		}
 	</script>
 </body>
