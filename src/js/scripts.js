@@ -9,7 +9,7 @@ SpotifyWebApi._addMethods(ServerMethods);
 // Create the API object
 const spotifyApi = new SpotifyWebApi({
 	clientId: 'bca1beee06c742639a62a7f932b37051',
-	redirectUri: 'http://localhost:8000/callback/',
+	redirectUri: 'https://professorkolodziej.github.io/final-project-music-mood/callback/',
 });
 
 // Set up the authentication permissions and URL
