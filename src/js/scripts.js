@@ -47,12 +47,10 @@ if (queryString !== '') {
 	const nextState = { additionalInformation: 'Authorization granted' };
 	window.history.pushState(nextState, nextTitle, nextURL);
 	loginButton.style.display = 'none';
-	// document.getElementsById('label').innerText = 'Your Music Recommendation';
 	document.getElementById('dropdown').style.display = 'none';
 	document.getElementById('choose-mood').style.display = 'none';
 	document.getElementById('wrapper').style.display = 'none';
 	document.getElementById('orange-box').style.display = 'none';
-	// document.getElementById('drop-down').style.display = 'none';
 }
 
 const mood = localStorage.getItem('mood');
@@ -81,16 +79,3 @@ if (mood !== null) {
 		},
 	);
 }
-
-/* const repoRow = `
-				<tr class="repo">
-					<td><a href="${repo.html_url}">${repoName}</a></td>
-					<td><a href="${repo.html_url}/releases/tag/${repoInfo.version}">${repoInfo.version}</td>
-					<td>?</td>
-					<td>?</td>
-					<td>${foundationVersion}</td>
-				</tr>
-				`;
-
-				document.querySelector('#version-manager').insertAdjacentHTML('beforeend', repoRow);
-*/
