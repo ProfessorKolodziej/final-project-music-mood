@@ -2,7 +2,10 @@
 
 ## Description
 
-Please add a brief description of your final project here.
+The goal of this website is to provide users with new music recommendations depending on their current mood.
+Our interactive site takes the search and scrolls out of discovering new music.
+Users will be able to choose between different moods for instantaneous recommendations.
+
 
 ## Project Documentation
 
