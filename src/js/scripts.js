@@ -47,67 +47,35 @@ if (queryString !== '') {
 	const nextState = { additionalInformation: 'Authorization granted' };
 	window.history.pushState(nextState, nextTitle, nextURL);
 	loginButton.style.display = 'none';
-	// document.getElementsById('label').innerText = 'Your Music Recommendation';
-	document.getElementById('start-window').style.display = 'none';
-	document.getElementById('mood-window').style.display = 'none';
+	document.getElementById('dropdown').style.display = 'none';
+	document.getElementById('choose-mood').style.display = 'none';
+	document.getElementById('wrapper').style.display = 'none';
 	document.getElementById('orange-box').style.display = 'none';
-	// document.getElementById('drop-down').style.display = 'none';
 }
 
-// var input = document.getElementById("mood-selection").textContent;
-
+const mood = localStorage.getItem('mood');
 const randomOffset = Math.floor(Math.random() * 500);
-
-spotifyApi.searchTracks('sad', { limit: 1, offset: randomOffset }).then(
-	(data) => {
-		const track = data.body.tracks.items[0];
-		const albumCover = document.createElement('img');
-		// const element = document.getElementById('jsfill');
-		albumCover.setAttribute('src', track.album.images[0].url);
-		document.body.appendChild(albumCover);
-		// element.innerText = track.name;
-		// alert(track.name);
-	},
-	// eslint-disable-next-line prefer-arrow-callback, func-names
-	function (err) {
-		// eslint-disable-next-line no-console
-		console.error(err);
-	},
-);
-
-/* if (input == 'sad') {
-	spotifyApi.searchTracks('sad music', { limit: 1, offset: randomOffset }).then(
-		function(data) {
-			var track = data.body.tracks.items[0];
-			console.log('album cover', track.album.images[0]);
-			console.log('track name', track.name);
+if (mood !== null) {
+	spotifyApi.searchTracks(mood, { limit: 1, offset: randomOffset }).then(
+		(data) => {
+			const track = data.body.tracks.items[0];
 			const albumCover = document.createElement('img');
-			const element = document.getElementById("track-name");
+			const trackname = document.getElementById('trackname');
+			const artistname = document.getElementById('artistname');
+			const bannerId = document.getElementById('banner');
 			albumCover.setAttribute('src', track.album.images[0].url);
+			albumCover.setAttribute('id', 'albumStyle');
 			document.body.appendChild(albumCover);
-			element.innerHTML(trackName);
+			const stringTitle = 'Title: ';
+			const stringArtist = 'Artist: ';
+			trackname.innerText = stringTitle.concat(track.name);
+			artistname.innerText = stringArtist.concat(track.artists[0].name);
+			bannerId.innerText = 'Results';
 		},
-		// eslint-disable-next-line prefer-arrow-callback
-		function(err) {
+		// eslint-disable-next-line prefer-arrow-callback, func-names
+		function (err) {
+			// eslint-disable-next-line no-console
 			console.error(err);
 		},
-		);
-	}
-if (input == 'happy') {
-	spotifyApi.searchTracks('happy music', { limit: 1, offset: randomOffset }).then(
-		function(data) {
-			var track = data.body.tracks.items[0];
-			console.log('album cover', track.album.images[0]);
-			console.log('track name', track.name);
-			const albumCover = document.createElement('img');
-			albumCover.setAttribute('src', track.album.images[0].url);
-			document.body.appendChild(albumCover);
-			document.getElementById("track-name").innerHTML = track.name;
-		},
-		// eslint-disable-next-line prefer-arrow-callback
-		function(err) {
-			console.error(err);
-		},
-		);
-	}
-*/
+	);
+}
