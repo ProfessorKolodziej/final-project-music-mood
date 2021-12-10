@@ -92,8 +92,8 @@ nav {
 	font-style: normal;
 	font-weight: bold;
 	font-size: 15px;
-	top: -28px;
-	left: 50px;
+	top: -25px;
+	left: 80px;
 	display: inline-block;
 	text-align: center;
 	color: #fff;
@@ -101,7 +101,7 @@ nav {
 
 	@media screen and (min-width: $tablet-vertical) {
 		font-size: 20px;
-		left: 70px;
+		left: 80px;
 		top: -60px;
 	}
 
@@ -116,21 +116,21 @@ nav {
 	position: absolute;
 	font-weight: 700;
 	font-size: 15px;
-	left: -60px;
-	top: -13px;
+	left: 260px;
+	top: -9px;
 	text-align: center;
 	color: #fff;
 	text-decoration: none;
 
 	@media screen and (min-width: $tablet-vertical) {
 		font-size: 20px;
-		left: 50px;
+		left: 400px;
 		top: -40px;
 	}
 
 	@media screen and (min-width: $desktop) {
 		font-size: 27px;
-		left: 250px;
+		left: 580px;
 		top: -160px;
 	}
 }
