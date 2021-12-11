@@ -42,7 +42,7 @@ if (queryString !== '') {
 	spotifyApi.setAccessToken(code);
 	// Redirect to the place you'd like to be in nextURL.
 	// Right now, this will redirect to your index.html.
-	const nextURL = window.location.origin;
+	const nextURL = 'https://professorkolodziej.github.io/final-project-music-mood/';
 	const nextTitle = 'Begin the quiz';
 	const nextState = { additionalInformation: 'Authorization granted' };
 	window.history.pushState(nextState, nextTitle, nextURL);

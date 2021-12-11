@@ -54,6 +54,14 @@ const generateHTMLPlugins = () => glob.sync('./src/**/*.html').map((dir) => {
   });
 });
 
+const custom = new HTMLWebpackPlugin({
+  filename: 'callback/index.html',
+  template: path.join(config.root, config.paths.src, 'callback/index.html'),
+  meta: {
+    viewport: config.viewport,
+  },
+});
+
 // Favicons
 const favicons = new FaviconsWebpackPlugin({
   logo: config.favicon,
@@ -84,6 +92,7 @@ module.exports = [
   stylelint,
   cssExtract,
   ...generateHTMLPlugins(),
+  custom,
   fs.existsSync(config.favicon) && favicons,
   config.env === 'production' && optimizeCss,
   webpackBar,

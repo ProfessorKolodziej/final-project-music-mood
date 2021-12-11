@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Update your description here" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Jura:wght@300;700&display=swap" rel="stylesheet">
+	<title>home</title>
+</head>
+
+<body>
+	<div class="topnav">
+		<a class="active" href="index.html">home</a>
+		<a class="about-us" href="aboutus.html">about us</a>
+	</div>
+	<div class="container" id="mood-window">
+		<div class="blue-banner">
+			<div class="x-button">
+			</div>
+			<h3 class="banner" id="banner">Mood Selector</h3>
+		</div>
+		<div class="container-1" id="start-window">
+			<p id="trackname"></p>
+			<p id="artistname"></p>
+			<div class=choose-mood id="choose-mood">
+				<p class="heading" id="label">Choose Your Mood:</p>
+			</div>
+			<div class="wrapper" id="wrapper">
+				<p id="mood" class="mood"></p>
+				<div class="dropdown" id="dropdown">
+					<button onclick="myFunction()" class="mood-button" type="button"> &#9660</button>
+					<div class="dropdown-content" id="mood-selection">
+						<p onclick="energetic()" id="energetic">energetic</p>
+						<p onclick="happy()" id="happy">happy</p>
+						<p onclick="chill()" id="chill">chill</p>
+						<p onclick="sad()" id="sad">sad</p>
+						<p onclick="angry()" id="angry">angry</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="see-results" id="results-button">
+			<button class="button-results" id="js-login" type="button">See My Results</button>
+		</div>
+	</div>
+	<div class="orange-box" id="orange-box">
+		<p class="suggest-song">Select a mood and we'll suggest a song</p>
+	</div>
+	<script>
+
+		function energetic() {
+			document.getElementById("mood").innerHTML = "energetic";
+			localStorage.setItem("mood", "energetic");
+		}
+
+		function happy() {
+			document.getElementById("mood").innerHTML = "happy";
+			localStorage.setItem("mood", "happy");
+		}
+		function chill() {
+			document.getElementById("mood").innerHTML = "chill";
+			localStorage.setItem("mood", "chill");
+		}
+		function sad() {
+			document.getElementById("mood").innerHTML = "sad";
+			localStorage.setItem("mood", "sad");
+		}
+		function angry() {
+			document.getElementById("mood").innerHTML = "angry";
+			localStorage.setItem("mood", "angry");
+		}
+	</script>
+	<script src="../js/scripts.js"/>
+</body>
+
+</html>
